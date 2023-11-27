@@ -9,9 +9,12 @@ This Django application provides an API endpoint for summarizing text using the 
    ```bash
    pip install -r requirements.txt
 
+   ```
+
 2. Set up environment variables
-    
-    ``export OPENAI_API_KEY=your_openai_api_key``
+
+   `export OPENAI_API_KEY=your_openai_api_key`
+
 ## Usage
 
 ```Summarize Text Endpoint
@@ -33,12 +36,13 @@ Body:
 ```
 
 ### Error Response: 500 Internal Server Error
-``{
-  "error": "Details about the error."
-}``
 
+`{
+  "error": "Details about the error."
+}`
 
 ### Add a Note:
+
 ```
 * Endpoint: /post-note/
 
@@ -72,7 +76,9 @@ Body:
 * }``
 
 ```
+
 ### Update a Note
+
 ```
 Update a Note
 Endpoint: /put-note/<id>/
@@ -91,7 +97,9 @@ Error Response: 400 Bad Request
 
 Body: Details about the validation error.
 ```
+
 ### Partially Update a Note:
+
 ```
 Endpoint: /patch-note/<id>/
 
@@ -109,7 +117,6 @@ Error Response: 400 Bad Request
 
 Body: Details about the validation error.
 ```
-
 
 ### Delete a Note
 
@@ -131,12 +138,14 @@ Body:
 {
   "error": "Note not found."
 }
-``` 
-### Development
-For local development, you can run the Django development server
-```python manage.py runserver```
+```
 
-### License 
+### Development
+
+For local development, you can run the Django development server
+`python manage.py runserver`
+
+### License
 
 ```
 
