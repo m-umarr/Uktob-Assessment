@@ -132,3 +132,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 load_dotenv()
+SESSION_COOKIE_SECURE = True
